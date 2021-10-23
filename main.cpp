@@ -654,7 +654,7 @@ VOID GameInit(VOID)
 				DrawBox(player.coll.left, player.coll.top, player.coll.right, player.coll.bottom,
 					GetColor(255, 0, 0), FALSE);
 			}
-
+			
 		}
 
 		//ゴールの描画
@@ -701,6 +701,8 @@ VOID GameInit(VOID)
 			//シーン切り替え
 			//タイトル画面に切り替え
 			ChangeScene(GAME_SCENE_TITLE);
+
+			return;
 		}
 		
 		// BGMが流れていないとき
